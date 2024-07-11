@@ -9,8 +9,12 @@ RUN         microdnf update \
             && microdnf -y install epel-release
 
 RUN         microdnf update \
-            && microdnf install -y curl lsof ca-certificates openssl git tar sqlite fontconfig tzdata iproute freetype tini zip unzip libstdc++ libwebp \
+            && microdnf install -y curl lsof ca-certificates openssl git tar sqlite fontconfig tzdata iproute freetype tini zip unzip libstdc++ libwebp glibc-locale-source glibc-langpack-en \
             && microdnf clean all
+
+ENV         LC_ALL=en_US.UTF-8
+ENV         LANG=en_US.UTF-8
+ENV         LANGUAGE=en_US.UTF-8
 
 RUN         useradd -m -d /home/container -s /bin/bash container
 USER        container
