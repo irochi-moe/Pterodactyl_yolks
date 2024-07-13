@@ -9,7 +9,7 @@ RUN         microdnf update \
             && microdnf install -y epel-release
 
 RUN         microdnf update \
-            && microdnf install -y curl lsof ca-certificates openssl git tar sqlite fontconfig tzdata iproute freetype tini zip unzip libstdc++ libwebp libwebp-devel libwebp-java libwebp-tools glibc-locale-source glibc-langpack-en \
+            && microdnf install -y curl lsof ca-certificates openssl git tar sqlite fontconfig tzdata iproute freetype tini zip unzip libstdc++ libwebp libwebp-devel glibc-locale-source glibc-langpack-en \
             && microdnf clean all
 
 ENV         LC_ALL=en_US.UTF-8
