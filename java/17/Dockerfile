@@ -6,7 +6,7 @@ LABEL       org.opencontainers.image.source="https://github.com/irochi-moe/Ptero
 LABEL       org.opencontainers.image.licenses=MIT
 
 RUN         apt update -y \
-            && apt install -y curl lsof ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 libfreetype6 tini zip unzip libstdc++6 webp \
+            && apt install -y lsof ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 libfreetype6 tini zip unzip locales curl jq libstdc++6 webp \
             && apt clean
 
 ENV         LC_ALL=en_US.UTF-8
