@@ -19,6 +19,9 @@ jobs:
       fail-fast: false
       matrix:
         tag:
+          - 8
+          - 11
+          - 16
           - 17
           - 17graalvm
           - 21
@@ -44,4 +47,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/irochi-moe/yolks:java_${{ matrix.tag }}
+            ghcr.io/irochi-moe/pterodactyl_yolks:java_${{ matrix.tag }}
