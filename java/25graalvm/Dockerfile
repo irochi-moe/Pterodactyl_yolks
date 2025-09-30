@@ -6,7 +6,7 @@ LABEL       org.opencontainers.image.source="https://github.com/irochi-moe/Ptero
 LABEL       org.opencontainers.image.licenses=MIT
 
 RUN         microdnf update -y \
-            && microdnf install -y epel-release \
+            && microdnf install -y oracle-epel-release-el10 \
             && microdnf install -y lsof ca-certificates openssl git tar sqlite fontconfig tzdata iproute freetype tini zip unzip curl jq libstdc++ glibc-locale-source glibc-langpack-en \
             && microdnf --enablerepo=ol10_codeready_builder install -y libwebp-tools \
             && microdnf clean all
