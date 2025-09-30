@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH container-registry.oracle.com/graalvm/jdk:24
+FROM        --platform=$TARGETOS/$TARGETARCH ghcr.io/graalvm/jdk-community:25
 
 LABEL       author="Irochi" maintainer="me@irochi.moe"
 
