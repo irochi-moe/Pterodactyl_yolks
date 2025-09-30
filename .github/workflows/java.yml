@@ -26,8 +26,8 @@ jobs:
           - 17graalvm
           - 21
           - 21graalvm
-          - 24
-          - 24graalvm
+          - 25
+          - 25graalvm
 
     steps:
       - uses: actions/checkout@v4
