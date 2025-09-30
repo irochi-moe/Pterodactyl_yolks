@@ -8,7 +8,7 @@ LABEL       org.opencontainers.image.licenses=MIT
 RUN         microdnf update -y \
             && microdnf install -y epel-release \
             && microdnf install -y lsof ca-certificates openssl git tar sqlite fontconfig tzdata iproute freetype tini zip unzip curl jq libstdc++ glibc-locale-source glibc-langpack-en \
-            && microdnf --enablerepo=ol9_codeready_builder install -y libwebp-tools \
+            && microdnf --enablerepo=ol10_codeready_builder install -y libwebp-tools \
             && microdnf clean all
 
 ENV         LC_ALL=en_US.UTF-8
