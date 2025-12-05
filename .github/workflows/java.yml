@@ -20,11 +20,12 @@ jobs:
       matrix:
         tag:
           - 8
-          - 11
-          - 16
           - 17
+          - 17graalvm
           - 21
+          - 21graalvm
           - 25
+          - 25graalvm
 
     steps:
       - uses: actions/checkout@v4
