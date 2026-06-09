@@ -21,11 +21,9 @@ jobs:
         tag:
           - 8
           - 17
-          - 17graalvm
           - 21
-          - 21graalvm
           - 25
-          - 25graalvm
+          - 26
 
     steps:
       - uses: actions/checkout@v4
